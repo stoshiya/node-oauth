@@ -6,6 +6,8 @@ Tested against Twitter (http://twitter.com), term.ie (http://term.ie/oauth/examp
 
 Also provides rudimentary OAuth2 support, tested against facebook, github, foursquare, google and Janrain.   For more complete usage examples please take a look at connect-auth (http://github.com/ciaranj/connect-auth)
 
+[![Clone in Koding](http://learn.koding.com/btn/clone_d.png)][koding]
+[koding]: https://koding.com/Teamwork?import=https://github.com/ciaranj/node-oauth/archive/master.zip&c=git1
 
 Installation
 ============== 
@@ -16,7 +18,7 @@ Installation
 Examples
 ==========
 
-To run examples/tests insall Mocha `$ npm install -g mocha` and run `$ mocha you-file-name.js`:
+To run examples/tests install Mocha `$ npm install -g mocha` and run `$ mocha you-file-name.js`:
 
 ## OAuth1.0
 
@@ -36,7 +38,7 @@ describe('OAuth1.0',function(){
     );
     oauth.get(
       'https://api.twitter.com/1.1/trends/place.json?id=23424977',
-      'your user toke for this app', //test user token
+      'your user token for this app', //test user token
       'your user secret for this app', //test user secret            
       function (e, data, res){
         if (e) console.error(e);        
